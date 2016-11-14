@@ -19,8 +19,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //lowerBoundField.text = "1"
-        //upperBoundField.text = "100"
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,5 +44,9 @@ class ViewController: UIViewController {
         
         resultLabel.text = String(randomNum)
      }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
 
