@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MovieViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:MovieViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movies">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MovieViewController.(viewDidLoad() -&gt; ()).(closure #1):MovieViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSON(response.result.value)[&quot;Search&quot;].arrayValue[0][&quot;Title&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(response)">
+            </PersistentString>
+            <PersistentString
+               value = "JSON(response.data)[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

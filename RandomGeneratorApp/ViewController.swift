@@ -37,10 +37,12 @@ class ViewController: UIViewController {
     
     @IBAction func generateRandom() {
         
-        let minNum = Int(lowerBoundField.text!)
-        let maxNum = Int(upperBoundField.text!)
+        guard let minNum = lowerBoundField.text?.integer, let maxNum = upperBoundField.text?.integer else {
+            // TODO show error alert
+            return
+        }
         
-        let randomNum = generateRandomNum(with: minNum!, and: maxNum!)
+        let randomNum = generateRandomNum(with: minNum, and: maxNum)
         
         resultLabel.text = String(randomNum)
      }
@@ -48,5 +50,12 @@ class ViewController: UIViewController {
     func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+
 }
 
+extension String {
+    var integer: Int? {
+        return Int(self)
+    }
+}
